@@ -1,0 +1,46 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "globals": {
+        "$": false
+    },
+    "plugins": [
+        "react",
+        "import"
+    ],
+    "rules": {
+        "no-unused-vars": 1,
+        "no-console": "off",
+        "indent": [ "error", 4 ],
+        "linebreak-style": [ "error", "unix" ],
+        "quotes": [ "error", "single" ],
+        "semi": [ "error", "always" ],
+
+        "react/jsx-no-undef": "error",
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
+        "react/react-in-jsx-scope": "error",
+
+        "import/no-unresolved": 2,
+        "import/named": 1,
+        "import/default": 2,
+        "import/namespace": 2,
+        "import/export": 2,
+        "import/no-named-as-default": 2,
+        "import/no-duplicates": 2,
+        "import/imports-first": 2
+    },
+    "settings": {
+        "import/resolver": "webpack"
+    }
+}
